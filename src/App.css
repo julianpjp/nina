@@ -1,38 +1,78 @@
-.App {
+/* App container */
+
+h1 {
+  text-align: center;
+  margin-top: 8%;
+  color: #ff66b2;
+  z-index: 2;
+  font-size: 2.5em;
+}
+/* Herz-Design */
+.heart {
+  position: absolute;
+  background-color: #ff66b2;
+  width: 40px;
+  height: 40px;
+  transform: rotate(45deg);
+  animation: floatUp 3s ease-in-out infinite;
+  z-index: 1;
+}
+
+/* Herzform durch abgerundete Ecken */
+.heart:before,
+.heart:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #ff66b2;
+}
+
+.heart:before {
+  top: -50%;
+  left: 0;
+}
+
+.heart:after {
+  left: -50%;
+  top: 0;
+}
+
+/* Herz-Bewegung nach oben */
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) rotate(45deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+.Login { 
+  margin-top: 100px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Weiter-Button */
+.btn-weiter {
+  margin-top: 7%;
+  background-color: #ff66b2; /* Pinke Hintergrundfarbe */
+  color: white; /* Weißer Text */
+  padding: 15px 30px; /* Größe des Buttons */
+  font-size: 1.2em; /* Schriftgröße */
+  font-weight: bold;
+  border: none; /* Keine Umrandung */
+  border-radius: 50px; /* Abgerundete Kanten */
+  box-shadow: 0 5px 15px rgba(255, 102, 178, 0.4); /* Weicher Schatten */
+  cursor: pointer; /* Zeigt den Mauszeiger als Hand */
+  transition: all 0.3s ease-in-out; /* Übergangseffekte */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Hover-Effekt für den Button */
+.btn-weiter:hover {
+  background-color: #ff3385; /* Dunkleres Pink beim Hover */
+  box-shadow: 0 8px 20px rgba(255, 51, 133, 0.5); /* Größerer Schatten beim Hover */
+  transform: translateY(-3px); /* Button hebt sich leicht beim Hover */
 }
