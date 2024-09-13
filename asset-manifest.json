@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/nina/static/css/main.b76eab8d.css",
-    "main.js": "/nina/static/js/main.250f427c.js",
+    "main.js": "/nina/static/js/main.b3f9ae8b.js",
     "index.html": "/nina/index.html",
     "main.b76eab8d.css.map": "/nina/static/css/main.b76eab8d.css.map",
-    "main.250f427c.js.map": "/nina/static/js/main.250f427c.js.map"
+    "main.b3f9ae8b.js.map": "/nina/static/js/main.b3f9ae8b.js.map"
   },
   "entrypoints": [
     "static/css/main.b76eab8d.css",
-    "static/js/main.250f427c.js"
+    "static/js/main.b3f9ae8b.js"
   ]
 }
